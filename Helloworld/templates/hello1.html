@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+{% include "header.html" %}
+<body>
+<p><a href="{% url 'master' %}">点击跳转首页</a></p>
+<!--取列表中第二个元素-->
+<!--body views_str all_dict  -->
+<p>{{f1|upper}}</p>
+<p>{{f1|first}}</p>
+<p>{{ f1|truncatewords:"3" }}</p>
+<p>{{f1|truncatechars:2}}</p>
+<p>{{timez|date:"F j, Y" }}</p>
+<p>{{timez|date:"Y-m-d" }}</p>
+<p>{{zero|default:"欢迎来到django世界"}}</p>
+<p>{{f1|length}}</p>
+<p>{{num|filesizeformat}}</p>
+
+{% for i in a_list %}
+<p> {{i}}</p>
+{% empty %}
+<p> 空空如也~</p>
+{% endfor %}
+
+{% ifequal 1 1 %}
+    <h1>Welcome!</h1>
+{% endifequal %}
+
+</body>
+
+</html>

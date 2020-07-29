@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!-- f1 num a_list timez  zero-->
+{% include "header.html" %}
+<body>
+<p><a href="{% url 'master' %}">点击跳转首页</a></p>
+<h1>{{body.1}}</h1>
+<!--取列表中第二个元素-->
+<p>{{views_str}}</p>
+<p>{{views_str|safe}}</p>
+
+<p>
+{%if num > 90 and num <= 100 %}
+优秀
+{% elif num > 60 and num <= 90 %}
+合格
+{% else %}
+一边玩去
+{% endif %}
+</p>
+
+<ul>
+{% for d in all_dict reversed %}
+    <li>{{ d.name }}</li>
+{% endfor %}
+</ul>
+<ul>
+{% for d in all_dict  %}
+    <li>{{ d.name }}</li>
+{% endfor %}
+</ul>
+
+{% for i in all_dict %}
+<p>{{ forloop.counter }}
+    {{ forloop.counter0 }}
+    {{ forloop.revcounter }}
+   {{ forloop.revcounter0 }}
+   {{ forloop.first }}
+    {{ forloop.last }}</p>
+{% endfor %}
+
+</body>
+
+</html>

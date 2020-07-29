@@ -19,11 +19,5 @@ from . import views
 from django.conf.urls import url,include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # url(r'^$', views.hello),
-    path('', views.master,name="master"),
-    path('hello1/', views.hello1, name="hello1"),
-    path('hello2/', views.hello2, name="hello2"),
-    path("form1/", views.form1),
-    path("my_tag/", include(('mytag.urls', 'mytag')))
+    path("", views.my_tag)
 ]
