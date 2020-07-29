@@ -8,8 +8,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Helloworld/Helloworld/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Helloworld/Helloworld/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Helloworld/Helloworld/views.py" />
+        <option value="$PROJECT_DIR$/Helloworld/Helloworld/urls.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
@@ -29,6 +66,17 @@
             <path>
               <item name="django-runood" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-runood" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-runood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-runood" type="462c0819:PsiDirectoryNode" />
+              <item name="Helloworld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-runood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-runood" type="462c0819:PsiDirectoryNode" />
+              <item name="Helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="Helloworld" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -64,24 +112,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596009681846</updated>
-      <workItem from="1596009683159" duration="813000" />
+      <workItem from="1596009683159" duration="1170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="813000" />
+    <option name="totallyTimeSpent" value="1170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.4589443" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -125,5 +174,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Helloworld/Helloworld/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helloworld/Helloworld/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
