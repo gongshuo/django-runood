@@ -15,7 +15,7 @@ class TagInline(admin.TabularInline):
 
 
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name','degree', 'email') # list
+    list_display = ('name', 'degree', 'email')  # list
     search_fields = ('name',)
     inlines = [TagInline]
     fieldsets = (
@@ -31,4 +31,4 @@ class ContactAdmin(admin.ModelAdmin):
 
 admin.site.register(Test, ContactAdmin)
 # Register your models here.
-# admin.site.register([Tag])
+admin.site.register([Tag])
