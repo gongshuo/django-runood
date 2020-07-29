@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static</title>
+</head>
+<body>
+<a rel="stylesheet" href="/static/runood-logo.jpg" > hello</a>
+<!--此时引用路径中的要用配置文件中的别名 static，而不是目录 statics-->
+<p></p>
+<img src='{% static "/runood-logo.jpg" %}' alt="runoob-logo">
+</body>
+</html>

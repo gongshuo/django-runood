@@ -1,4 +1,4 @@
-"""Helloworld URL Configuration
+"""helloform URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -15,17 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
-from django.conf.urls import url,include
+from django.conf.urls import url
+from . import search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # url(r'^$', views.hello),
-    path('', views.master,name="master"),
-    path('hello1/', views.hello1, name="hello1"),
-    path('hello2/', views.hello2, name="hello2"),
-    path("form1/", views.form1),
-    path("my_tag/", include(('mytag.urls', 'mytag'))),
-    path("pic/", views.pic),
-    path('ext/',views.extends)
+    path('search_form/', search.search_form),
+    path('search/', search.search, name='search1'),
+    path('search_p/', search.search_p, name='search2'),
+    path('search_post/', search.search_post,name='search_post'),
+    path('req/', search.get_request, name='req'),
+    path('redir/', search.redir),
 ]

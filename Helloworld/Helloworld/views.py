@@ -46,3 +46,11 @@ def form1(request):
 
 def my_filter(request):
     return render(request, 'my_filter.html')
+
+
+def pic(request):
+    return render(request, 'static_test.html')
+
+
+def extends(request):
+    return render(request, 'extend/runoob.html')

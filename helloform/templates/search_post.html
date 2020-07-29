@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+    <form action="{% url 'search2'%}" method="{{method}}">
+        {% csrf_token %}
+        <input type="text" name="qqq">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>{{ rlt }}</p>
+    <p>{{content}}</p>
+</body>
+</html>
