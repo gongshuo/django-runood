@@ -11,11 +11,12 @@
       <user-name>root</user-name>
       <introspection-schemas>*:@,runoob</introspection-schemas>
     </data-source>
-    <data-source name="db" uuid="9f4b1359-1ea3-4560-8a2a-b2b0e4077c15">
+    <data-source name="db.sqlite3" uuid="e21c33aa-0461-40bd-8c63-3c5f65335d8f">
       <database-info product="SQLite" version="3.31.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.31.1" dbms="SQLITE" exact-version="3.31.1" exact-driver-version="3.31">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
