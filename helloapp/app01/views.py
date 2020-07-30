@@ -7,6 +7,10 @@ from . import models
 app_name = 'app01'
 
 
+def hello(request):
+    return HttpResponse("<p>欢迎操作数据库！</p>")
+
+
 def add_book(request):
     book = models.Book(title="菜鸟教程",price=300,publish="菜鸟出版社",pub_date="2008-8-8")
     # books = models.Book.objects.create(title="如来神掌", \
@@ -16,10 +20,10 @@ def add_book(request):
 
 
 def get_book(request):
-    books = models.Book.objects.filter(pk=5)
-    # books = models.Book.objects.get(pk=5)  # 只获取条件中的一个
+    books1 = models.Book.objects.filter(id=5)
+    # books = models.Book.objects.get(id=5)  # 只获取条件中的一个
     # books = models.Book.objects.all()
-    # books = models.Book.objects.exclude(pk=5) # exclude 查询不符合条件的数据
+    # books = models.Book.objects.exclude(id=5) # exclude 查询不符合条件的数据
     # books = models.Book.objects.order_by("-price")  # 查询所有，按照价格降序排列
     # books = models.Book.objects.order_by("-price").reverse() # 降序再反转
     # books = models.Book.objects.count() # 查询所有数据的数量
@@ -43,8 +47,27 @@ def get_book(request):
     # __year 是 DateField 数据类型的年份
     # __month 是DateField 数据类型的月份
     # __day 是DateField 数据类型的天数
-    print(books)
-    print("//////////////////////////////////////")
     books = models.Book.objects.filter(publish='菜鸟出版社', price=300)
     print(books, type(books))  # QuerySet类型，类似于list。
-    return HttpResponse("<p>查找成功！{}</p>".format(books[0].titile))
+    return HttpResponse("<p>查找成功！{} {}</p>".format(books[0].title, str(books1[0].title)))
+    # return HttpResponse("<p>查找成功！</p>")
+
+
+def del_book(request):
+    books = models.Book.objects.filter(publish='菜鸟出版社', price=300)
+    print(books, type(books))  # QuerySet类型，类似于list。
+    print(books[0])
+    books.delete()
+    return HttpResponse("<p>删除成功！{}</p>".format(books[0]))
+    # return HttpResponse("<p>删除成功！</p>")
+
+
+def update_book(request):
+    books = models.Book.objects.filter(publish='菜鸟出版社', price=300)
+    print(books, type(books))  # QuerySet类型，类似于list。
+    print(books[0])
+    books.price = 100
+    books.save()
+    # books = models.Book.objects.filter(pk__in=[7, 8]).update(price=888)
+    return HttpResponse("<p>修改成功！{}</p>".format(books[0]))
+    # return HttpResponse("<p>修改成功！</p>")
