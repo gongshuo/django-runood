@@ -15,6 +15,7 @@ class Book(models.Model):
     publish = models.ForeignKey("Publish", on_delete=models.CASCADE)
     # models.ForeignKey("关联类名", on_delete=models.CASCADE)。
     authors = models.ManyToManyField("Author")
+    # book 和 author 表关联表
 
 
 class Publish(models.Model):
